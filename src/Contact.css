@@ -1,0 +1,53 @@
+/* Contact Component Styling */
+.contact-container {
+    padding: 40px;
+    margin-top: 60px; /* Ensures space below navbar */
+    background-color: #ffffff;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 60px auto;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  .contact-textarea {
+    height: 150px;
+  }
+  
+  .contact-button {
+    padding: 15px 30px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+  }
+  
+  .contact-button:hover {
+    background-color: #028a57;
+  }
+  

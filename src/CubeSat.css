@@ -1,0 +1,46 @@
+/* Base styling for the CubeSat page */
+.cubesat-container {
+    background-color: #f4f4f9; /* Light background */
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .cubesat-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+  }
+  
+  .cubesat-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .cubesat-description p {
+    margin-bottom: 20px;
+  }
+  
+  .cubesat-description strong {
+    color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+    .cubesat-container {
+      padding: 20px;
+    }
+  
+    .cubesat-title {
+      font-size: 2rem;
+    }
+  
+    .cubesat-description {
+      font-size: 1rem;
+    }
+  }
+  

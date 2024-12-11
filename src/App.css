@@ -1,0 +1,107 @@
+/* General styling for the app */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #f4f4f4; /* Light background color for the whole page */
+}
+
+.extraSpace{
+  min-height: calc(100vh - 60px)
+}
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 3vh;
+  background-color: #282c34; /* Ensures the entire background is dark */
+}
+
+/* Logo styling */
+.App-logo {
+  height: 80px;
+  pointer-events: none;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between the left and right sections */
+  align-items: center;
+  background-color: #333;
+  padding: 10px 30px; /* Adds padding inside the navbar */
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px auto; /* Adds margin around the navbar for spacing */
+  border-radius: 20px; /* Rounded corners */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  flex: 0;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Adds spacing between the buttons */
+}
+
+.nav-button:hover {
+  background-color: #111;
+}
+
+.nav-button.active {
+  background-color: #04AA6D;
+}
+
+/* Main Header Styling */
+.App-header {
+  background-color: #282c34;
+  min-height: auto; /* Reduces the header's height to leave space for other components */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: 80px; /* Adds padding to the top, but smaller to accommodate navbar */
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensures the logo animation is applied */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Clickable text styling */
+.clickHere {
+  color: rgb(95, 171, 233);
+}
+
+.App-link {
+  color: #61dafb;
+}

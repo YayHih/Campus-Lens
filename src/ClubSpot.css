@@ -1,0 +1,110 @@
+/* Base styles for ClubSpot page */
+.clubspot-container {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-align: left; /* Align all text to the left */
+  }
+  
+  .clubspot-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+  }
+  
+  .clubspot-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .clubspot-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .clubspot-container ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .clubspot-container ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .clubspot-back-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clubspot-back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 'Try it' button styles */
+  .clubspot-try-it-button {
+    padding: 12px 24px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .clubspot-try-it-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: translateY(-2px); /* Button lift effect */
+  }
+  
+  /* Focus effect for accessibility */
+  .clubspot-try-it-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.5); /* Green focus ring */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .clubspot-container {
+      padding: 20px;
+    }
+  
+    .clubspot-container h1 {
+      font-size: 2rem;
+    }
+  
+    .clubspot-container p, .clubspot-container ul li {
+      font-size: 1rem;
+    }
+  
+    .clubspot-back-button {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .clubspot-try-it-button {
+      font-size: 1.1rem;
+      padding: 10px 20px;
+    }
+  }
+  

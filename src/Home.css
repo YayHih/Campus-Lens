@@ -1,0 +1,170 @@
+/* CampusLens Component Styling */
+
+.campuslens-container {
+  padding: 40px;
+  margin-top: 60px;
+  background-color: #1e2025;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 60px auto;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* For animations */
+}
+
+/* Title Styling with Bounce Animation */
+.campuslens-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #61dafb;
+  margin-bottom: 20px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* Description Container with Sliding Animation */
+.campuslens-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.campuslens-description {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slide-in 0.8s ease-out forwards;
+}
+
+/* Mission Section */
+.campuslens-mission {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2b2f37;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.campuslens-mission h2 {
+  font-size: 28px;
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.campuslens-mission p {
+  font-size: 18px;
+  color: #dcdcdc;
+  margin: 0;
+}
+
+/* Button Styling */
+.campuslens-button {
+  padding: 15px 30px;
+  background-color: #04AA6D;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.campuslens-button:hover {
+  background-color: #028a57;
+  transform: scale(1.05);
+}
+
+/* Button Container Styling */
+.campuslens-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the buttons */
+  margin-top: 40px;
+}
+
+.campuslens-call-to-action {
+  position: relative;
+}
+
+/* Features/Applications Preview Styling */
+.features-preview,
+.applications-preview {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #2b2f37;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.feature-card,
+.application-card {
+  background-color: #20232a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover,
+.application-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card h3,
+.application-card h3 {
+  font-size: 18px;
+  color: #61dafb;
+  margin-bottom: 8px;
+}
+
+.feature-card p,
+.application-card p {
+  font-size: 16px;
+  color: #dcdcdc;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
