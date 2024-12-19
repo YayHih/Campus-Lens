@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
 }
 
 .navbar-brand h1 {
@@ -24,23 +25,38 @@
 .navbar-menu {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
-.navbar-menu button {
+.navbar-menu button,
+.signin-button {
+  all: unset;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.1);
-  border: none;
   color: var(--text-color);
-  padding: 0.8rem 1.8rem;
+  padding: 8px 24px;
   border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
+  height: 38px;
+  min-width: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
-.navbar-menu button:hover {
+.navbar-menu button:hover,
+.signin-button:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   transform: translateY(-2px);
+}
+
+/* Remove all !important since we're using the same base styles */
+.signin-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -52,8 +68,11 @@
     font-size: 2rem;
   }
 
-  .navbar-menu button {
-    padding: 0.6rem 1.2rem;
+  .navbar-menu button,
+  .signin-button {
+    padding: 6px 18px;
     font-size: 1rem;
+    min-width: 90px;
+    height: 36px;
   }
 }

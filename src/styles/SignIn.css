@@ -1,0 +1,117 @@
+.signin-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  padding: 2rem;
+}
+
+.signin-card {
+  background: rgba(97, 218, 251, 0.05);
+  border-radius: 20px;
+  padding: 3rem 4rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 30px rgba(97, 218, 251, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(97, 218, 251, 0.1);
+  margin-top: 80px;
+}
+
+.signin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.signin-header h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.signin-header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-group label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.form-group input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(97, 218, 251, 0.1);
+  background: rgba(97, 218, 251, 0.05);
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.2);
+}
+
+.signin-button {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.signin-button:hover {
+  background: #7ae2ff;
+  transform: translateY(-2px);
+}
+
+.signin-footer {
+  margin-top: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signin-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signin-footer a:hover {
+  color: #7ae2ff;
+}
+
+@media (max-width: 768px) {
+  .signin-card {
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  .signin-header h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -16,13 +16,13 @@
 
 .about-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .about-header h1 {
   font-size: 3.5rem;
   color: var(--primary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .about-subtitle {
@@ -30,31 +30,37 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-.team-showcase {
+.team-card {
   display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding: 3rem;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 20px;
-  margin-bottom: 4rem;
   border: 1px solid rgba(97, 218, 251, 0.2);
+  overflow: hidden;
+  margin-bottom: 4rem;
 }
 
-.team-image-container {
-  position: relative;
+.team-left {
   width: 300px;
-  height: 300px;
+  padding: 2rem;
+  background: rgba(97, 218, 251, 0.03);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.team-image-wrapper {
+  width: 180px;
+  height: 180px;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
 }
 
-.about-image {
+.team-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  transition: transform 0.5s ease;
 }
 
 .image-overlay {
@@ -67,33 +73,46 @@
   border-radius: 20px;
 }
 
-.team-details h2 {
-  font-size: 2.5rem;
+.team-right {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.team-info {
+  max-width: 600px;
+}
+
+.team-info h2 {
+  font-size: 2.2rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin: 0 0 0.5rem 0;
 }
 
-.team-details h3 {
-  font-size: 1.8rem;
+.team-info h3 {
+  font-size: 1.6rem;
   color: #fff;
-  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  margin: 0 0 1rem 0;
 }
 
-.team-description {
-  font-size: 1.2rem;
-  line-height: 1.8;
+.team-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 
 .values-section {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .values-section h2 {
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .values-grid {
@@ -118,36 +137,56 @@
 
 .value-icon {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .value-card h3 {
   color: var(--primary-color);
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .value-card p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
-  .team-showcase {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .team-image-container {
-    width: 250px;
-    height: 250px;
-  }
-
-  .values-grid {
-    grid-template-columns: 1fr;
+  .about-container {
+    padding: 2rem;
   }
 
   .about-header h1 {
     font-size: 2.5rem;
+  }
+
+  .team-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-left {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .team-right {
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  .team-info {
+    text-align: center;
+  }
+
+  .team-info h2,
+  .team-info h3,
+  .team-info p {
+    text-align: center;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
