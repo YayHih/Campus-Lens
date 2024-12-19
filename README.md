@@ -1,5 +1,5 @@
 CAMPUS LENS:
-Abalay and Martin Oka
+Abylay and Martin Oka
 
 # Getting Started with Create React App
 
